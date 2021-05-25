@@ -15,6 +15,8 @@ video {
   src: url(fonts/broadway_regular-webfont.woff2) format(woff2);
 }
 
+/********** Header ***********/
+
 header {
   position: sticky;
   z-index: 100;
@@ -27,6 +29,12 @@ header {
 #menu {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+header img {
+  max-width: 100px;
 }
 
 li {
@@ -40,6 +48,12 @@ a {
   color: white;
 }
 
+a:hover {
+  text-shadow: 1px 1px red;
+}
+
+/******** Fonte *********/
+
 h1 {
   font-family: "Broadway";
 }
@@ -48,6 +62,34 @@ h2 {
   font-family: "Broadway";
 }
 
-h3 {
+h3,
+h4,
+p {
   font-family: futura-pt, sans-serif;
+}
+
+/********* Footer *********/
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.footer_left {
+  border-left: 1px solid white;
+  padding: 10px;
+}
+
+.footer_middle {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding: 10px;
+}
+
+.footer_right {
+  border-right: 1px solid white;
+  padding: 10px;
 }
