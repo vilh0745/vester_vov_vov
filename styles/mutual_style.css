@@ -34,7 +34,9 @@ header {
 }
 
 header img {
-  max-width: 100px;
+  max-width: 80px;
+  float: left;
+  position: relative;
 }
 
 li {
