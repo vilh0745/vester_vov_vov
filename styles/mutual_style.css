@@ -69,6 +69,18 @@ p {
   font-family: futura-pt, sans-serif;
 }
 
+/********* Overordnet Struktur ********/
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+section {
+  grid-column: 2 / 3;
+  padding: 20px;
+  margin: 40px;
+}
+
 /********* Footer *********/
 
 footer {
