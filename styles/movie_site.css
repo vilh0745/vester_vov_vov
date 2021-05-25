@@ -1,0 +1,27 @@
+#top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 7%;
+  padding-top: 10%;
+}
+
+#top img {
+  width: 30%;
+}
+
+#beskrivelse {
+  padding-left: 7%;
+  padding-right: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  #top {
+    width: 100%;
+  }
+  #top img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
