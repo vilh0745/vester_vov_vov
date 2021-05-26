@@ -1,3 +1,8 @@
+main {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 img {
   object-fit: cover;
 }
@@ -12,3 +17,24 @@ img {
 section {
   padding-bottom: 10vw;
 }
+
+.film_section {
+  margin: 0 -9999rem;
+  padding: 0 9999rem;
+  background: #430a08;
+}
+
+.film_wrapper {
+  padding: 20px;
+  margin: 40px;
+}
+
+.film_wrapper h3 {
+  color: white;
+}
+
+.film_wrapper p {
+  color: white;
+}
+
+/*media 768 - 1200*/
