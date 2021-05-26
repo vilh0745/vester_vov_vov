@@ -1,3 +1,8 @@
+main {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 .find_os {
   background-color: #430a08;
   color: white;
@@ -16,6 +21,16 @@ main img {
   padding: 10px;
 }
 
+.find_os {
+  margin: 0 -9999rem;
+  padding: 0 9999rem;
+}
+
+.baggrund_wrapper {
+  padding: 10px;
+  margin: 25px;
+}
+
 @media (min-width: 1200px) {
   .oppe {
     display: grid;
@@ -23,10 +38,15 @@ main img {
     gap: 80px;
   }
 
-  .find_os {
+  .baggrund_wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 80px;
+  }
+
+  .baggrund_wrapper {
+    padding: 20px;
+    margin: 40px;
   }
 
   .find_os img {
