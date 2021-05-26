@@ -1,0 +1,9 @@
+.find_os {
+  background-color: #430a08;
+  color: white;
+}
+
+h2 {
+  display: flex;
+  place-content: center;
+}
