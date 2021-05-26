@@ -46,6 +46,10 @@ h3 {
   color: white;
 }
 
+h4 {
+  padding-top: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   #top {
     width: 100%;
@@ -56,4 +60,8 @@ h3 {
     margin-right: auto;
     width: 100%;
   }
+}
+
+span {
+  font-weight: bold;
 }
