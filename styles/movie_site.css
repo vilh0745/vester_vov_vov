@@ -1,23 +1,33 @@
 #top {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 7%;
-  padding-top: 10%;
 }
 
 #top img {
   width: 30%;
 }
 
-#beskrivelse {
-  padding-left: 7%;
-  padding-right: 10%;
+#beskrivelse p {
+  color: black;
 }
 
 #andre {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
   background-color: #430a08;
+}
+
+#andre .film1 {
+  grid-column: 1/3;
+}
+
+p {
+  color: white;
+}
+
+h3 {
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
