@@ -11,12 +11,13 @@ video {
 }
 
 @font-face {
-  font-family: "Broadway";
-  src: url(fonts/broadway_regular-webfont.woff2) format(woff2);
+  font-family: "broadwayregular";
+  src: url("../fonts/broadway_regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /********** Header ***********/
-
 header {
   position: sticky;
   z-index: 100;
@@ -26,27 +27,18 @@ header {
   background-color: #430a08;
 }
 
-#menu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 10px;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
 header img {
-  max-width: 100px;
+  max-width: 50px;
 }
 
 li {
-  font-family: "Broadway";
+  font-family: "broadwayregular";
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  font-family: "Broadway";
+  font-family: "broadwayregular";
   color: white;
 }
 
@@ -63,7 +55,7 @@ h1 {
 
 h2 {
   font-family: "Broadway";
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 
@@ -71,23 +63,17 @@ h3,
 h4,
 p {
   font-family: futura-pt, sans-serif;
-  font-weight: 410;
+  font-weight: 400;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
 }
 
 /********* Overordnet Struktur ********/
-main {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-}
-
 section {
-  grid-column: 2 / 3;
-  padding: 20px;
-  margin: 40px;
+  padding: 10px;
+  margin: 25px;
 }
 
 /********* Footer *********/
@@ -98,6 +84,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 25px;
+  font-size: 0.6rem;
 }
 
 .footer_left {
@@ -114,4 +101,54 @@ footer {
 .footer_right {
   border-right: 1px solid white;
   padding: 10px;
+}
+
+/******** Mediaquerys ********/
+
+@media (min-width: 1200px) {
+  header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding: 1rem 1.5rem;
+    gap: 20px;
+    background-color: #430a08;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  header img {
+    max-width: 100px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+
+  section {
+    grid-column: 2 / 3;
+    padding: 20px;
+    margin: 40px;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+    padding-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
 }
