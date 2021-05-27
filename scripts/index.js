@@ -1,38 +1,87 @@
-/*const slide = document.querySelector("#dias1");
+/*const slide = document.querySelector(".dias_slide");
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
+
+let i = 0; //Start point for index af slides
+let slide = []; //Slides
+let myTime; //Tid mellem skift af slides, hvis ikke trykket på
+
+// Dias List
+images[0] = `<a href="movie_site.html" id="dias1">
+              <img src="img/MinariDias.webp" style="width: 100%" />
+              <div class="text">Caption Text</div>
+            </a>`;
+images[1] = `<a href="movie_site.html" id="dias1">
+<img src="img/soundofmetalDias.webp" style="width: 100%" />
+<div class="text">Caption Text</div>
+</a>`;
+images[2] = `<a href="movie_site.html" id="dias1">
+<img src="img/MarcoEffektenDias.webp" style="width: 100%" />
+<div class="text">Caption Text</div>
+</a>`;
 
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
   console.log("sidenVises");
   nextBtn.addEventListener("mousedown", nextSlide);
+  prevBtn.addEventListener("mousedown", prevSlide);
+  StartTimer();
+}
+
+function StartTimer() {
+  myTime = setTimeout(nextSlide, 6000);
+  nextSlide();
 }
 
 function nextSlide() {
   console.log("next");
-  
+  slide.innerHTML = images[i];
+
+  // Check If Index Is Under Max
+  if (i < images.length - 1) {
+    // Add 1 to Index
+    i++;
+  } else {
+    // Reset Back To O
+    i = 0;
+  }
+
+  //reset tid på automatisk slide og begynder funktion igen
+  clearTimeout(myTime);
+  StartTimer();
+}
+
+function prevSlide() {
+  console.log("prev");
+  plusSlide(-1);
 }
 */
 
-window.addEventListener("load", sidenVises);
+/*
+let i = 0; // Start Point
+let images = []; // Images Array
+let time = 5000; // Time Between Switch
 
-function sidenVises() {
-  console.log("sidenVises");
-}
-
-var i = 0; // Start Point
-var images = []; // Images Array
-var time = 3000; // Time Between Switch
+const slide = document.querySelector(".dias_slide");
 
 // Image List
-images[0] = "soundofmetalDias.webp";
-images[1] = "MinariDias.webp";
-images[2] = "MarcoEffekten.webp";
+images[0] = `<a href="movie_site.html" id="dias1">
+              <img src="img/MinariDias.webp" style="width: 100%" />
+              <div class="text">Caption Text</div>
+            </a>`;
+images[1] = `<a href="movie_site.html" id="dias1">
+<img src="img/soundofmetalDias.webp" style="width: 100%" />
+<div class="text">Caption Text</div>
+</a>`;
+images[2] = `<a href="movie_site.html" id="dias1">
+<img src="img/MarcoEffektenDias.webp" style="width: 100%" />
+<div class="text">Caption Text</div>
+</a>`;
 
 // Change Image
 function changeImg() {
-  document.slide.src = images[i];
+  slide.innerHTML = images[i];
 
   // Check If Index Is Under Max
   if (i < images.length - 1) {
@@ -49,3 +98,51 @@ function changeImg() {
 
 // Run function when page loads
 window.onload = changeImg;
+*/
+
+let i = 0; // Start Point
+let images = []; // Images Array
+let time = 5000; // Time Between Switch
+
+const slide = document.querySelector(".dias_slide");
+
+// Image List
+images[0] = `<a href="movie_site.html" id="dias1">
+              <img src="img/MinariDias.webp" style="width: 100%" />
+              <div class="text">Caption Text</div>
+            </a>`;
+images[1] = `<a href="movie_site.html" id="dias1">
+<img src="img/soundofmetalDias.webp" style="width: 100%" />
+<div class="text">Caption Text</div>
+</a>`;
+images[2] = `<a href="movie_site.html" id="dias1">
+<img src="img/MarcoEffektenDias.webp" style="width: 100%" />
+<div class="text">Caption Text</div>
+</a>`;
+
+window.addEventListener("load", sidenVises);
+
+function sidenVises() {
+  console.log("sidenVises");
+  changeImg();
+  StartTimer();
+}
+
+// Change Image
+function changeImg() {
+  slide.innerHTML = images[i];
+
+  // Check If Index Is Under Max
+  if (i < images.length - 1) {
+    // Add 1 to Index
+    i++;
+  } else {
+    // Reset Back To O
+    i = 0;
+  }
+
+
+  function StartTimer
+  // Run function every x seconds
+  setTimeout("changeImg()", time);
+}
