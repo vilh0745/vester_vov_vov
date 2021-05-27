@@ -21,6 +21,7 @@ section a {
 .kontakt {
   background-color: #430a08;
   color: white;
+  cursor: pointer;
 }
 
 main img {
