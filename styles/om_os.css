@@ -15,10 +15,17 @@ h2 {
 
 section a {
   color: #430a08;
+  font-family: futura-pt, sans-serif;
+}
+
+.kontakt {
+  background-color: #430a08;
+  color: white;
 }
 
 main img {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .find_os {
@@ -26,9 +33,33 @@ main img {
   padding: 0 9999rem;
 }
 
+.find_wrapper {
+  padding-top: 20px;
+}
+
 .baggrund_wrapper {
   padding: 10px;
   margin: 25px;
+  padding-bottom: 35px;
+}
+
+.vester_wrapper {
+  padding-top: 20px;
+}
+
+.vester_wrapper br {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.find_os br {
+  display: block;
+  margin-bottom: 20px;
+}
+
+section.gallery h3 {
+  display: flex;
+  place-content: center;
 }
 
 @media (min-width: 1200px) {
@@ -47,6 +78,10 @@ main img {
   .baggrund_wrapper {
     padding: 20px;
     margin: 40px;
+  }
+
+  .find_wrapper {
+    padding-top: 0;
   }
 
   .find_os img {
