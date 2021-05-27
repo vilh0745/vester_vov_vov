@@ -81,6 +81,10 @@ section.gallery h3 {
     margin: 40px;
   }
 
+  .vester_wrapper {
+    padding-top: 0px;
+  }
+
   .find_wrapper {
     padding-top: 0;
   }
