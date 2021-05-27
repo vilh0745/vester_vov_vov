@@ -74,7 +74,8 @@ section {
   overflow: hidden;
 }
 
-.dias {
+.film_section p {
+  display: none;
 }
 
 /*media 768 - 1200*/
