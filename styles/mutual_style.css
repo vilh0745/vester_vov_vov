@@ -49,12 +49,12 @@ a:hover {
 /******** Fonte *********/
 
 h1 {
-  font-family: "Broadway";
+  font-family: "broadwayregular";
   font-weight: 400;
 }
 
 h2 {
-  font-family: "Broadway";
+  font-family: "broadwayregular";
   font-size: 3rem;
   font-weight: 400;
 }
@@ -68,6 +68,10 @@ p {
 
 h3 {
   font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.4;
 }
 
 /********* Overordnet Struktur ********/
