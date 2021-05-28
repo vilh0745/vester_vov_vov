@@ -1,27 +1,155 @@
-#top {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 7%;
-  padding-top: 10%;
+main {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-#top img {
-  width: 30%;
+.top img {
+  display: block;
+  width: 100%;
 }
 
-#beskrivelse {
-  padding-left: 7%;
-  padding-right: 10%;
+.andre h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.andre p {
+  color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  #top {
-    width: 100%;
+h3 {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.andre {
+  margin: 0 -9999rem;
+  padding: 0 9999rem;
+  background-color: #430a08;
+  padding-bottom: 28px;
+}
+
+.button {
+  background-color: #ab1500;
+  border: none;
+  color: white;
+  padding: 14px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 12px 0px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.billet h2 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .billet img {
+    margin: 10px;
   }
-  #top img {
+}
+
+@media (min-width: 1200px) {
+  .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .top .billet_element {
+    width: 200%;
+    margin-left: -80px;
+  }
+
+  .top img {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .beskrivelse p {
+    color: black;
+  }
+
+  .andre .film_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #430a08;
+    gap: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+
+  .billet h2 {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 4rem;
   }
+
+  .film1 {
+    grid-column: 1/1;
+  }
+
+  .film2 {
+    grid-column: 2/2;
+  }
+
+  .film3 {
+    grid-column: 3/3;
+  }
+
+  p {
+    color: white;
+  }
+  .andre h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 3rem;
+    color: white;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  h4 {
+    padding-top: 10px;
+  }
+}
+
+iframe {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.iframe_wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+
+  padding-top: calc(100% / (16 / 9));
+}
+
+.trailer {
+  padding-top: 20px;
+}
+
+.beskrivelse {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.billetelement img {
+  width: 100%;
 }
