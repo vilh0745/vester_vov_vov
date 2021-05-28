@@ -18,17 +18,112 @@ video {
 }
 
 /********** Header ***********/
-header {
-  position: sticky;
-  z-index: 100;
-  top: 0;
-  padding: 1rem 1.5rem;
-  gap: 20px;
-  background-color: #430a08;
+header img {
+  width: 80px;
 }
 
-header img {
-  max-width: 50px;
+header {
+  position: sticky;
+  background-color: #430a08;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#menu {
+  background-color: #430a08;
+  display: flex;
+
+  padding: 20px;
+  z-index: 10;
+}
+
+@media (max-width: 700px) {
+  #menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 50vw;
+    height: 120vw;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+    overflow: hidden;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    flex-basis: 100%;
+  }
+}
+
+#menu.open {
+  transform: translateX(0);
+  overflow: hidden;
+}
+
+#menu a {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: block;
+  padding: 5px;
+}
+
+/* #burger_btn */
+
+#burger_btn {
+  width: 40px;
+  height: 40px;
+  background-color: #430a08;
+  overflow: hidden;
+  position: relative;
+}
+
+.stroke {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background-color: white;
+  top: calc(50% - 1.5px);
+  left: 0vw;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.stroke.top {
+  transform: translateY(-10px);
+}
+
+.stroke.bottom {
+  transform: translateY(10px);
+}
+
+/* #burger_btn Når den er åben / .open */
+
+#burger_btn.open .stroke.top {
+  transform: translateY(0) rotate(45deg);
+}
+
+#burger_btn.open .stroke.center {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+#burger_btn.open .stroke.bottom {
+  transform: translateY(0) rotate(-45deg);
 }
 
 li {
@@ -108,9 +203,37 @@ footer {
 }
 
 /******** Mediaquerys ********/
+@media (min-width: 701px) {
+  .hidden {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding: 1rem 1.5rem;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+}
 
 @media (min-width: 1200px) {
   header {
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     z-index: 100;
     top: 0;
@@ -126,6 +249,11 @@ footer {
     padding: 10px;
     font-size: 1.4rem;
     font-weight: 400;
+    gap: 40px;
+  }
+
+  .hidden {
+    display: none;
   }
 
   header img {
