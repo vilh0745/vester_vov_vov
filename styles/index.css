@@ -106,6 +106,18 @@ section {
   overflow: hidden;
 }
 
+#prevBtn,
+#nextBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 0 3px 3px 0;
+}
+
+#nextBtn {
+  border-radius: 3px 0 0 3px;
+}
+
 #billet_element {
   margin-top: 8vw;
 }
