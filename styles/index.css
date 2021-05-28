@@ -78,16 +78,37 @@ section {
   display: none;
 }
 
-/*sektion 1 - dias */
+/*sektion 1 - dias og billet */
 
 .diasshow_container {
   margin: auto;
   overflow: hidden;
 }
 
+#billet_element {
+  margin-top: 8vw;
+}
+
+.dato {
+  border-radius: 12px;
+  width: 11vw;
+  height: 9vw;
+  background-color: #2f0706;
+  color: white;
+  border: none;
+  position: relative;
+  top: -15vw;
+  left: 1vw;
+  margin-left: 1vw;
+}
+
+.dato:hover {
+  background-color: #430a08;
+}
+
 /*media 768 - 1200*/
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .film_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
