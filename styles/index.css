@@ -143,6 +143,7 @@ section {
   border: none;
   position: relative;
   margin-left: 1vw;
+  top: 14vw;
 }
 
 .dato:hover {
@@ -151,8 +152,11 @@ section {
 
 #knapper_film {
   margin-top: 10vw;
-  background-color: green;
-  background-image: url(img/filmrulle.svg);
+  background-image: url(../img/filmrulle.svg);
+  background-size: cover;
+  height: 30vw;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*media 768*/
