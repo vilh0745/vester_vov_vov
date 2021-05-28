@@ -21,6 +21,10 @@ h2 {
   padding-bottom: 12vw;
 }
 
+section {
+  padding-top: 10vw;
+}
+
 /*sektion 3 - cafe */
 
 .cafe {
@@ -48,10 +52,6 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   justify-content: space-around;
-}
-
-section {
-  padding-bottom: 10vw;
 }
 
 .film_section {
@@ -109,18 +109,26 @@ section {
 
 #prevBtn,
 #nextBtn {
-  background-color: black;
+  background-color: #430a08;
   border: none;
   color: white;
-  border-radius: 0 3px 3px 0;
   font-size: 2rem;
   position: relative;
-  top: -30vw;
+  width: 100%;
+  border
 }
 
-#nextBtn {
-  border-radius: 3px 0 0 3px;
-  left: 83%;
+#prev_nxt_btn {
+  margin-top: -5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+  cursor: pointer;
+  background-color: #ab1500;
 }
 
 #billet_element {
