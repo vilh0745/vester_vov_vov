@@ -106,6 +106,7 @@ let myTimer;
 
 const slide = document.querySelector(".dias_slide");
 const nextBtn = document.querySelector("#nextBtn");
+const prevBtn = document.querySelector("#prevBtn");
 
 // Image List
 images[0] = `<a href="movie_site.html" id="dias1">
@@ -127,6 +128,7 @@ function sidenVises() {
   console.log("sidenVises");
   changeImg();
   nextBtn.addEventListener("mousedown", nextSlide);
+  prevBtn.addEventListener("mousedown", prevSlide);
 }
 
 // Change Image
@@ -160,6 +162,24 @@ function nextSlide() {
   if (i < images.length - 1) {
     // Add 1 to Index
     i++;
+  } else {
+    // Reset Back To O
+    i = 0;
+  }
+
+  StartTimer();
+}
+
+function prevSlide() {
+  console.log("prev");
+  clearTimeout(myTimer);
+
+  slide.innerHTML = images[i];
+
+  // Check If Index Is Under Max
+  if (i < images.length - 1) {
+    // Add 1 to Index
+    i--;
   } else {
     // Reset Back To O
     i = 0;

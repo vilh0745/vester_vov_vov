@@ -63,6 +63,7 @@ section {
 
 .film_wrapper h3 {
   color: white;
+  font-size: 1.2rem;
 }
 
 .film_wrapper p {
@@ -78,4 +79,32 @@ section {
   display: none;
 }
 
+.film_section button {
+}
+
 /*media 768 - 1200*/
+
+@media (min-width: 700px) {
+  .film_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .film_section p {
+    display: block;
+  }
+
+  .film_wrapper h3 {
+    color: white;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .film_wrapper h3 {
+    color: white;
+    font-size: 2rem;
+  }
+}
