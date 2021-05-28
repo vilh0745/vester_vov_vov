@@ -104,6 +104,23 @@ section {
 .diasshow_container {
   margin: auto;
   overflow: hidden;
+  position: relative;
+}
+
+#prevBtn,
+#nextBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  font-size: 2rem;
+  position: relative;
+  top: -30vw;
+}
+
+#nextBtn {
+  border-radius: 3px 0 0 3px;
+  left: 83%;
 }
 
 #billet_element {
