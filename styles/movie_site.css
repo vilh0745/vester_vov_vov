@@ -8,6 +8,21 @@ main {
   width: 100%;
 }
 
+.andre h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.andre p {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -48,10 +63,10 @@ main {
     padding-right: 15px;
   }
 
-  .top h2 {
+  .billet h2 {
     grid-column: 1/4;
     text-align: center;
-    font-size: 3rem;
+    font-weight: 2rem;
   }
 
   .film1 {
