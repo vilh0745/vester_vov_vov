@@ -154,6 +154,7 @@ function StartTimer() {
 
 function nextSlide() {
   console.log("next");
+  console.log(i);
   clearTimeout(myTimer);
 
   slide.innerHTML = images[i];
@@ -166,24 +167,27 @@ function nextSlide() {
     // Reset Back To O
     i = 0;
   }
-
+  console.log(i);
   StartTimer();
 }
 
 function prevSlide() {
   console.log("prev");
+  console.log(i);
   clearTimeout(myTimer);
 
   slide.innerHTML = images[i];
 
   // Check If Index Is Under Max
-  if (i < images.length - 1) {
+  if (i > 0) {
     // Add 1 to Index
     i--;
   } else {
-    // Reset Back To O
-    i = 0;
+    // Reset Back To 3
+    i = 2;
   }
+
+  console.log(i);
 
   StartTimer();
 }

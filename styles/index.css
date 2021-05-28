@@ -21,6 +21,8 @@ h2 {
   padding-bottom: 12vw;
 }
 
+/*sektion 3 - cafe */
+
 .cafe {
   font-size: 1.6rem;
   padding-bottom: 0;
@@ -38,6 +40,8 @@ h2 {
   color: white;
   cursor: pointer;
 }
+
+/*sektion 2 - film */
 
 .film_wrapper {
   display: grid;
@@ -70,21 +74,20 @@ section {
   color: white;
 }
 
+.film_section p {
+  display: none;
+}
+
+/*sektion 1 - dias */
+
 .diasshow_container {
   margin: auto;
   overflow: hidden;
 }
 
-.film_section p {
-  display: none;
-}
-
-.film_section button {
-}
-
 /*media 768 - 1200*/
 
-@media (min-width: 700px) {
+@media (min-width: 760px) {
   .film_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -101,6 +104,8 @@ section {
     font-size: 1.4rem;
   }
 }
+
+/*media 71200*/
 
 @media (min-width: 1200px) {
   .film_wrapper h3 {
