@@ -4,6 +4,7 @@ h1 {
   padding-block: 20px;
 }
 
+/*
   /* .film,
   .film2 {
     padding-left: 7%;
@@ -21,27 +22,26 @@ h1 {
     padding-top: 25px;
   } */
 
-  .film2 {
-    background-color: #430a08;
-  }
+.film2 {
+  background-color: #430a08;
+}
 
-  .film2 p,
-  .film2 h2,
-  .film2 h3 {
-    color: white;
-  }
+.film2 p,
+.film2 h2,
+.film2 h3 {
+  color: white;
+}
 
-  .bold {
-    font-weight: 700;
-  }
+.bold {
+  font-weight: 700;
+}
 
-  h2{
-      padding-top: 7%;
-  }
+h2 {
+  padding-top: 7%;
+}
 
-    h3{
-      padding-bottom: 5%;
-  }
+h3 {
+  padding-bottom: 5%;
 }
 
 @media (min-width: 1200px) {
@@ -80,7 +80,15 @@ h1 {
     color: white;
   }
 
-  span {
+  .bold {
     font-weight: 700;
+  }
+
+  .film .film2 h2 {
+    padding-top: 0%;
+  }
+
+  .film .film2 h3 {
+    padding-bottom: 5%;
   }
 }
