@@ -12,11 +12,11 @@
   </head>
   <body>
     <header>
+      <a href="index.html" class="logo"
+        ><img src="img/fy_bi.svg" alt="Vester Vov Vov"
+      /></a>
       <nav>
         <ul id="menu">
-          <a href="index.html" class="logo"
-            ><img src="img/fy_bi.svg" alt="Vester Vov Vov"
-          /></a>
           <li><a href="program.html">Film i Biografen</a></li>
           <li><a href="upcoming.html">Kommende Film</a></li>
           <li><a href="/">Find Din Billetbestilling</a></li>
@@ -24,6 +24,14 @@
           <li><a href="/">Events</a></li>
           <li><a href="/">Gavekort</a></li>
         </ul>
+        <a href="index.html"
+          ><img src="img/vester_logo.svg" alt="logo" class="hidden"
+        /></a>
+        <div id="burger_btn" class="hidden">
+          <div class="stroke top"></div>
+          <div class="stroke center"></div>
+          <div class="stroke bottom"></div>
+        </div>
       </nav>
     </header>
     <main>
@@ -32,14 +40,15 @@
         <h2>ART CINEMA & CAFE - SIDEN 1975</h2>
         <div class="diasshow_container">
           <div class="dias_slide">
-          
+        
           </div>
         </div>
-        <button id="prevBtn">Prev</button>
-        <button id="nextBtn">Next</button>
+        <div id="prev_nxt_btn">
+        <button id="prevBtn">‹</button>
+        <button id="nextBtn">›</button>
+      </div>
         <div id="billet_element">
           <img src="img/filmrulle.svg" alt="Film rulle">
-        </div>
         <div id="knapper_film">
           <button class="dato">Man</button>
           <button class="dato">Tir</button>
@@ -49,6 +58,7 @@
           <button class="dato">Lør</button>
           <button class="dato">Søn</button>
         </div>
+      </div>
       </section>
       <section class="film_section">
         <div class="film_wrapper">
@@ -123,5 +133,6 @@
   </footer>
   <script src="scripts/login.js"></script>
   <script src="scripts/index.js"></script>
+  <script src="scripts/burger.js"></script>
   </body>
 </html>
