@@ -21,6 +21,10 @@ h2 {
   padding-bottom: 12vw;
 }
 
+section {
+  padding-top: 10vw;
+}
+
 /*sektion 3 - cafe */
 
 .cafe {
@@ -48,10 +52,6 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   justify-content: space-around;
-}
-
-section {
-  padding-bottom: 10vw;
 }
 
 .film_section {
@@ -109,18 +109,25 @@ section {
 
 #prevBtn,
 #nextBtn {
-  background-color: black;
+  background-color: #430a08;
   border: none;
   color: white;
-  border-radius: 0 3px 3px 0;
   font-size: 2rem;
   position: relative;
-  top: -30vw;
+  width: 100%;
 }
 
-#nextBtn {
-  border-radius: 3px 0 0 3px;
-  left: 83%;
+#prev_nxt_btn {
+  margin-top: -5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+  cursor: pointer;
+  background-color: #ab1500;
 }
 
 #billet_element {
@@ -135,9 +142,8 @@ section {
   color: white;
   border: none;
   position: relative;
-  top: -15vw;
-  left: 1vw;
   margin-left: 1vw;
+  top: 14vw;
 }
 
 .dato:hover {
@@ -145,10 +151,15 @@ section {
 }
 
 #knapper_film {
-  margin-bottom: -12vw;
+  margin-top: 10vw;
+  background-image: url(../img/filmrulle.svg);
+  background-size: cover;
+  height: 30vw;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/*media 768 - 1200*/
+/*media 768*/
 
 @media (min-width: 768px) {
   .film_wrapper {
@@ -166,9 +177,12 @@ section {
     color: white;
     font-size: 1.4rem;
   }
+
+  /*bestil billetter knapper på film plakater*/
+  /*knap på om os*/
 }
 
-/*media 71200*/
+/*media 1200*/
 
 @media (min-width: 1200px) {
   .film_wrapper h3 {
@@ -176,3 +190,6 @@ section {
     font-size: 2rem;
   }
 }
+
+/*dias show kanpper*/
+/*knap på om os*/

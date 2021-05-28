@@ -68,6 +68,10 @@ header nav {
   nav {
     flex-basis: 100%;
   }
+
+  header {
+    z-index: 100;
+  }
 }
 
 #menu.open {
