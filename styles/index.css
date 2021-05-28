@@ -142,8 +142,6 @@ section {
   color: white;
   border: none;
   position: relative;
-  top: -15vw;
-  left: 1vw;
   margin-left: 1vw;
 }
 
@@ -152,7 +150,9 @@ section {
 }
 
 #knapper_film {
-  margin-bottom: -12vw;
+  margin-top: 10vw;
+  background-color: green;
+  background-image: url(img/filmrulle.svg);
 }
 
 /*media 768*/
