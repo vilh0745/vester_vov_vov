@@ -141,9 +141,10 @@ section {
   background-color: #430a08;
   color: white;
   border: none;
-  position: relative;
+  position: absolute;
   margin-left: 1vw;
-  top: 14vw;
+  top: 13.5vw;
+  font-family: futura-pt, sans-serif;
 }
 
 .dato:hover {
@@ -153,10 +154,11 @@ section {
 #knapper_film {
   margin-top: 10vw;
   background-image: url(../img/filmrulle.svg);
-  background-size: cover;
+  background-size: contain;
   height: 30vw;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 /*media 768*/
@@ -178,7 +180,22 @@ section {
     font-size: 1.4rem;
   }
 
-  /*bestil billetter knapper på film plakater*/
+  /*bestil billetter knapper på film plakater
+  .Bestil {
+  background-color: #ab1500;
+  border: none;
+  color: white;
+  padding: 14px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 12px 0px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+  */
+
   /*knap på om os*/
 }
 
@@ -193,3 +210,4 @@ section {
 
 /*dias show kanpper*/
 /*knap på om os*/
+/*Mænd ved siden af h1*/
