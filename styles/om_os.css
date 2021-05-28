@@ -21,6 +21,7 @@ section a {
 .kontakt {
   background-color: #430a08;
   color: white;
+  cursor: pointer;
 }
 
 main img {
@@ -78,6 +79,10 @@ section.gallery h3 {
   .baggrund_wrapper {
     padding: 20px;
     margin: 40px;
+  }
+
+  .vester_wrapper {
+    padding-top: 0px;
   }
 
   .find_wrapper {
