@@ -19,9 +19,8 @@ main {
 }
 
 .andre .film_wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .andre p {
@@ -59,8 +58,9 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  .billet img {
-    margin: 10px;
+  .andre .film_wrapper {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
