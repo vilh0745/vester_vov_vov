@@ -59,6 +59,7 @@ h3 {
 button {
   background-color: #430a08;
   color: white;
+  cursor: pointer;
 }
 
 p {
@@ -98,6 +99,7 @@ input[type="submit"]:hover {
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
+  border: 2px solid white;
   background-color: #430a08;
   color: white;
   padding: 20px;
@@ -113,9 +115,7 @@ input[type="submit"]:hover {
   left: 12.5vw;
   right: 0;
   bottom: 0;
-  background-color: 0; /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
 }
 
 /* desktop under her */
