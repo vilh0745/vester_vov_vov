@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>Document</title>
+    <title>Kommende Film</title>
     <link rel="stylesheet" href="styles/mutual_style.css" />
     <link rel="stylesheet" href="styles/upcoming.css" />
     <link rel="stylesheet" href="https://use.typekit.net/uat1saz.css" />
+    <link rel="shortcut icon" href="img/fy_bi_sort.svg" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -17,6 +18,7 @@
       /></a>
       <nav>
         <ul id="menu">
+          <img src="img/fy_bi.svg" alt="fy og bi" class="hidden" />
           <li><a href="program.html">Film i Biografen</a></li>
           <li><a href="upcoming.html">Kommende Film</a></li>
           <li><a href="/">Find Din Billetbestilling</a></li>
@@ -36,108 +38,223 @@
     </header>
 
     <main>
-      <h1>Kommende Film</h1>
+      <h2 class="overskrift">Kommende Film</h2>
 
       <section class="film">
         <div class="poster">
-          <img src="img/som.jpeg" alt="sound_of_metal" />
+          <img src="img/tove.jpeg" alt="Tove" />
           <p>
-            <span class="bold">Instruktør:</span> Darius Marder <br />
+            <span class="bold">Instruktør:</span> Zaida Bergroth <br />
             <span class="bold">Længde:</span> 2 timer og 16 minutter
             <br />
-            <span class="bold">Skuespiller:</span> Riz Ahmed, Olivia Cooke
+            <span class="bold">Skuespiller:</span> Shanti Roney, Alma Pöysti,
+            Krista Kosonen
             <br />
             <span class="bold">Tilladt for børn over 11 år </span>
           </p>
         </div>
         <div class="description">
-          <h2>Sound of Metal</h2>
-          <h3>Kommer d. 30 juni</h3>
+          <h2 class="titel">Tove</h2>
+          <h3 class="dato">Kommer d. 30 juni</h3>
           <p>
-            2020'ernes ´Smagen af rust og ben´ har den britiske skuespiller og
-            rapper Riz Ahmed i rollen som trommeslageren Ruben, der i
-            bogstaveligste forstand er på stikkerne: Han kæmper med at lægge sit
-            misbrug bag sig og bryde igennem med musikken. Men så sker nærmest
-            det værste, som tænkes kan. Han begynder at miste hørelsen, og det
-            går hurtigt. Og så er gode råd dyre. Kilde: Camera Film
+            Tove Jansson er kendt i hele verden for de folkekære mumitrolde og
+            deres magiske univers. I det biografiske drama TOVE følger vi den
+            unge billedkunstner i efterkrigstidens Helsinki, hvor hun kæmper for
+            at bryde fri af sin berømte faders skygge og skabe sin egen kunst. I
+            byens kunstnermiljø møder hun den frisindede politiker Atos
+            Wirtanen, som hun forelsker sig i, men Jansson drages også af den
+            kvindelige teaterinstruktør Vivica Bandler, der, på trods af
+            Janssons egen tvivl, tror på at mumitroldene er noget helt unikt.
+            TOVE er et stærkt og rørende drama om at turde lytte til sin indre
+            stemme – i både kunst og kærlighed – med en altoverskyggende
+            skuespilpræstation af svensk-finske Alma Pöysti i centrum som Tove
+            Jansson. Filmen er med i Filmporten.
           </p>
+          <button onclick="on()">Påmind mig</button>
+          <div id="overlay">
+            <div class="container">
+              <label for="fname">Fornavn</label>
+              <form action="upcoming.html">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Dit fornavn.."
+                />
+
+                <label for="lname">Efternavn</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Dit efternavn.."
+                />
+
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="emailaddress"
+                  placeholder="Din e-mail.."
+                />
+
+                <label for="tel">Telefon.nr</label>
+                <input
+                type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder="Dit telefon.nr"
+                ></input>
+
+                <input id="send" onclick="off()" type="submit" value="Påmind mig" />
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="knap"></div>
       </section>
 
       <section class="film2">
-        <div class="poster">
-          <img src="img/nom.jpeg" alt="nomadland" />
-          <p>
-            <span class="bold">Instruktør:</span> Chloé Zhaos <br />
-            <span class="bold">Længde: </span>2 timer og 10 minutter
-            <br />
-            <span class="bold">Skuespiller:</span> Frances McDormand<br />
-            <span class="bold">Tilladt for børn over 11 år</span>
-          </p>
+        <div class="baggrund_wrapper">
+          <div class="poster">
+            <img src="img/flugt.jpeg" alt="flugt" />
+            <p>
+              <span class="bold">Instruktør:</span> Jonas Poher Rasmussen <br />
+              <span class="bold">Længde: </span>2 timer og 10 minutter
+              <br />
+              <span class="bold">Tilladt for børn over 11 år</span>
+            </p>
+          </div>
+          <div class="description">
+            <h2 class="titel">Flugt</h2>
+            <h3 class="dato">Kommer d. 30 juni</h3>
+            <p>
+              Amin er 36 år, veluddannet og succesfuld i sit karrierejob. Alt
+              kører. Men da hans kæreste Kasper frier til ham, gribes han af
+              angst for at give sig hen. Ingen kender nemlig hele sandheden om
+              Amins fortid. Hvis Amin skal turde leve sit liv fuldt ud, må han
+              tage et endeligt opgør med dén hemmelighed, han som barn fik ordre
+              om aldrig at afsløre. En hemmelighed han har båret på i mere end
+              20 år. Opgøret med fortiden sender Amin tilbage til en lykkelig
+              barndom i 80’ernes Kabul i Afghanistan, hvor a-ha brager igennem
+              hans walkman og hvor Jean Claude Van Damme hænger på
+              drengeværelset i familiens hus. Men han sendes også tilbage til
+              den nådesløse borgerkrig, der forvandler den trygge og kærlige
+              hverdag til en krigszone og splitter hans familie til atomer. En
+              krig der sender 11-årige Amin på en farefuld flugt, som først
+              slutter 5 år senere da han ankommer helt alene til Danmark. FLUGT
+              er en sand historie fortalt af ’Amin’ til filmens instruktør Jonas
+              Poher Rasmussen. Kilde: Reel Pictures
+            </p>
+            <button onclick="on()">Påmind mig</button>
+            <div id="overlay">
+              <div class="container">
+                <label for="fname">Fornavn</label>
+                <form action="upcoming.html">
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Dit fornavn.."
+                  />
+
+                  <label for="lname">Efternavn</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    placeholder="Dit efternavn.."
+                  />
+
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="emailaddress"
+                    placeholder="Din e-mail.."
+                  />
+
+                  <label for="subject">Leje af lokaler</label>
+                  <textarea
+                    id="subject"
+                    name="subject"
+                    placeholder="Skriv din henvendelse her.."
+                    style="height: 200px"
+                  ></textarea>
+
+                  <input id="send" onclick="off()" type="submit" value="Send" />
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="description">
-          <h2>Nomadland</h2>
-          <h3>Kommer d. 30 juni</h3>
-          <p>
-            Vinder af Publikumsprisen ved Toronto International Filmfestival
-            2020 & Guldløven på Venedig Film Festival 2020. Filmmagasinet EKKO
-            skrev således fra Venedig Filmfestivalen: Chloé Zhaos film er bygget
-            op omkring Frances McDormands præstation på samme måde, som hendes
-            nøgterne, humanistiske The Rider var bygget op omkring den
-            ikke-professionelle skuespiller Lilly Jandreau. Filmens humor og
-            varme, der kendetegner Zhaous’ bedste karakterer, brænder igennem i
-            hver eneste scene. Men hovedrollen Fran har også en skrøbelig
-            stolthed, en vilje til ikke at ligge andre til last – og den tvinger
-            hende afsted, ud på landevejen. For det er tvang, der har bestemt
-            hendes nomadetilværelse. Byen i Nevada, hvor hun havde hele sit
-            voksenliv med sin afdøde mand, blev ikke bare ramt hårdt af
-            finanskrisen. Den blev lukket. Da den lokale mine drejede nøglen om,
-            var der intet tilbage for beboerne. Fran er egentlig pensionsmoden,
-            men det er en bitter vittighed i Amerika, hvor det forventes, at man
-            er sin egen lykkes smed. Men Chloé Zhao er egentlig ikke bitter. Hun
-            dvæler ikke ved den økonomiske nød, der tvinger en generation af
-            bedsteforældre til at pakke kasser for Amazon, indtil de falder om
-            ved samlebåndet. Eller til juleræset er ovre, og de må se sig om
-            efter noget nyt. Hun finder en ynde i seniorernes sammenhold, som da
-            en støttegruppe for hvidhårede jobnomader synger On the Road Again
-            rundt om et lejrbål i ørkenen. Og hun dyrker naturens ynde. Fran
-            ville hellere slå sig ned et sted, men hun får også øjnene op for
-            det storslåede landskab, hun kører tyndt. Det gør vi også. Frances
-            McDormand er både brysk og imødekommende i Nomadland som den stolte
-            Fran, der er et højdepunkt i skuespillerens store karriere. Kilde:
-            Film Porten
-          </p>
-        </div>
-        <div class="knap"></div>
       </section>
 
       <section class="film">
         <div class="poster">
-          <img src="img//min.jpeg" alt="minari" />
+          <img src="img//sult.jpeg" alt="sult" />
           <p>
-            <span class="bold">Instruktør:</span> Lee Isaac Chung <br />
+            <span class="bold">Instruktør:</span> Christoffer Boe <br />
             <span class="bold">Længde:</span> 1 timer og 55 minutter
             <br />
-            <span class="bold">Skuespiller:</span> Steven Yeun, Han Ye-ri <br />
-            <span class="bold">Tilladt for børn over 11 år</span>
+            <span class="bold">Skuespiller:</span> Nicolas Bro, Nikolaj
+            Coster-Waldau, Katrine Greis-Rosenthal <br />
+            <span class="bold">Tilladt for børn over 15 år</span>
           </p>
         </div>
         <div class="description">
-          <h2>Minari</h2>
-          <h3>Kommer d. 30 juni</h3>
+          <h2 class="titel">Smagen af sult</h2>
+          <h3 class="dato">Kommer d. 30 juni</h3>
           <p>
-            En del af Filmporten Minari som vandt en Golden Globe for bedste
-            ikke amerikanske film bliver vores åbningsfilm. Minari er en
-            bevægende film om det, der forbinder os med vores rødder. I Minari
-            møder vi en koreansk-amerikansk familie, som flytter til en lille
-            farm i Arkansas for at forfølge deres egen amerikanske drøm.
-            Familiens hjem forandres totalt, da den snu og elskelige bedstemor
-            med et ualmindeligt beskidt sprog ankommer. Filmen er også en del af
-            Filmportens program.
+            Maggie og Carsten elsker hinanden, har to skønne børn og åbner deres
+            egen gourmetrestaurant Malus. De vil ha’ det hele. Og har det hele.
+            Næsten. For de mangler den forjættede Michelin-stjerne. Deres store
+            fælles drøm, som de har satset alt på at opnå. Men en dag modtager
+            Carsten et brev om, at hans kone elsker en anden. Hvem har sendt det
+            og hvorfor? I deres umættelige passion for livet og jagt efter den
+            ultimative anerkendelse, har de glemt at livets måltider ikke er
+            gratis. Alt har en pris. Kilde: Nordisk Film
           </p>
+          <button onclick="on()">Påmind mig</button>
+          <div id="overlay">
+            <div class="container">
+              <label for="fname">Fornavn</label>
+              <form action="upcoming.html">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Dit fornavn.."
+                />
+
+                <label for="lname">Efternavn</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Dit efternavn.."
+                />
+
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="emailaddress"
+                  placeholder="Din e-mail.."
+                />
+
+                <label for="subject">Leje af lokaler</label>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Skriv din henvendelse her.."
+                  style="height: 200px"
+                ></textarea>
+
+                <input id="send" onclick="off()" type="submit" value="Send" />
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="knap"></div>
       </section>
     </main>
     <footer>
@@ -149,5 +266,6 @@
     </footer>
     <script src="scripts/login.js"></script>
     <script src="scripts/burger.js"></script>
+    <script src="scripts/upcoming.js"></script>
   </body>
 </html>

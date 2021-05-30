@@ -1,29 +1,41 @@
-h1 {
-  text-align: center;
-  grid-column: 2;
-  padding-block: 20px;
+main {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-/*
-  /* .film,
-  .film2 {
-    padding-left: 7%;
-    padding-top: 10%;
-    gap: 25px;
-  }
+.overskrift {
+  text-align: center;
+  grid-column: 2;
+  font-size: 2rem;
+}
+.titel {
+  font-size: 2rem;
+  font-family: futura-pt, sans-serif;
+}
 
-  .film img,
-  .film2 {
-    width: 100%;
-  }
+.film2 {
+  margin: 0 -9999rem;
+  padding: 0 9999rem;
+}
 
-  .film p,
-  .film2 {
-    padding-top: 25px;
-  } */
+.baggrund_wrapper {
+  padding: 10px;
+  margin: 25px;
+  padding-bottom: 33px;
+}
+
+.dato {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
 
 .film2 {
   background-color: #430a08;
+}
+
+.film2 {
+  padding-top: 10px;
 }
 
 .film2 p,
@@ -44,34 +56,110 @@ h3 {
   padding-bottom: 5%;
 }
 
+button {
+  background-color: #430a08;
+  color: white;
+  cursor: pointer;
+}
+
+p {
+  padding-bottom: 15px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: futura-pt, sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #ab1500;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #ab1500;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: #430a08;
+  color: white;
+  padding: 20px;
+  font-family: futura-pt, sans-serif;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 75%; /* Full width (cover the whole page) */
+  height: 50%; /* Full height (cover the whole page) */
+  top: 20vw;
+  left: 12.5vw;
+  right: 0;
+  bottom: 0;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+/* desktop under her */
+
 @media (min-width: 1200px) {
-  h1 {
-    text-align: center;
-    grid-column: 2;
-    padding-block: 20px;
+  .overskrift {
+    font-size: 3rem;
+    padding-top: 30px;
   }
 
-  .film,
-  .film2 {
+  .titel {
+    font-size: 3rem;
+  }
+
+  .dato {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 5%;
+  }
+
+  .film {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-left: 7%;
-    padding-top: 10%;
+    gap: 25px;
+  }
+
+  .baggrund_wrapper {
+    padding: 20px;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     gap: 25px;
   }
 
   .film img,
-  .film2 {
+  .film2 img {
     width: 100%;
   }
 
-  .film p,
   .film2 {
-    padding-top: 25px;
+    padding-top: 33px;
   }
-
-  .film2 {
-    background-color: #430a08;
+  .film p {
+    padding-top: 0px;
   }
 
   .film2 p,
@@ -84,11 +172,19 @@ h3 {
     font-weight: 700;
   }
 
-  .film .film2 h2 {
+  h2 {
     padding-top: 0%;
+    padding-bottom: 0%;
   }
 
-  .film .film2 h3 {
-    padding-bottom: 5%;
+  h3 {
+    padding-bottom: 0%;
+  }
+
+  #overlay {
+    width: 50%; /* Full width (cover the whole page) */
+    height: 50%; /* Full height (cover the whole page) */
+    top: 10vw;
+    left: 24vw;
   }
 }

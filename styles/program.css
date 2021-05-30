@@ -1,0 +1,130 @@
+main {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.overskrift {
+  text-align: center;
+  grid-column: 2;
+  font-size: 2rem;
+}
+.titel {
+  font-size: 2rem;
+  font-family: futura-pt, sans-serif;
+}
+
+.dato {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.film2 {
+  background-color: #430a08;
+}
+
+.film2 {
+  padding-top: 33px;
+}
+
+.film2 {
+  margin: 0 -9999rem;
+  padding: 0 9999rem;
+}
+
+.baggrund_wrapper {
+  padding: 10px;
+  margin: 25px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+.film2 p,
+.film2 h2,
+.film2 h3 {
+  color: white;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h2 {
+  padding-top: 7%;
+}
+
+h3 {
+  padding-bottom: 5%;
+}
+
+button {
+  background-color: #430a08;
+  color: white;
+}
+
+p {
+  padding-bottom: 15px;
+}
+/* desktop under her */
+
+@media (min-width: 1200px) {
+  .overskrift {
+    font-size: 3rem;
+    padding-top: 30px;
+  }
+
+  .titel {
+    font-size: 3rem;
+  }
+
+  .dato {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 5%;
+  }
+
+  .film {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 25px;
+  }
+
+  .baggrund_wrapper {
+    padding: 20px;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 25px;
+  }
+
+  .film img,
+  .film2 img {
+    width: 100%;
+  }
+
+  .film2 {
+    padding-top: 33px;
+  }
+  .film p {
+    padding-top: 0px;
+  }
+
+  .film2 p,
+  .film2 h2,
+  .film2 h3 {
+    color: white;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  h2 {
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+
+  h3 {
+    padding-bottom: 0%;
+  }
+}
