@@ -63,6 +63,60 @@ button {
 p {
   padding-bottom: 15px;
 }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: futura-pt, sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #ab1500;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #ab1500;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #430a08;
+  color: white;
+  padding: 20px;
+  font-family: futura-pt, sans-serif;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 75%; /* Full width (cover the whole page) */
+  height: 50%; /* Full height (cover the whole page) */
+  top: 20vw;
+  left: 12.5vw;
+  right: 0;
+  bottom: 0;
+  background-color: 0; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
 /* desktop under her */
 
 @media (min-width: 1200px) {
@@ -124,5 +178,12 @@ p {
 
   h3 {
     padding-bottom: 0%;
+  }
+
+  #overlay {
+    width: 50%; /* Full width (cover the whole page) */
+    height: 50%; /* Full height (cover the whole page) */
+    top: 10vw;
+    left: 24vw;
   }
 }

@@ -70,7 +70,46 @@
             skuespilpræstation af svensk-finske Alma Pöysti i centrum som Tove
             Jansson. Filmen er med i Filmporten.
           </p>
-          <button><a href="/">Påmind mig</a></button>
+          <button onclick="on()">Påmind mig</button>
+          <div id="overlay">
+            <div class="container">
+              <label for="fname">Fornavn</label>
+              <form action="upcoming.html">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Dit fornavn.."
+                />
+
+                <label for="lname">Efternavn</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Dit efternavn.."
+                />
+
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="emailaddress"
+                  placeholder="Din e-mail.."
+                />
+
+                <label for="tel">Telefon.nr</label>
+                <input
+                type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder="Dit telefon.nr"
+                ></input>
+
+                <input id="send" onclick="off()" type="submit" value="Påmind mig" />
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -106,7 +145,46 @@
               er en sand historie fortalt af ’Amin’ til filmens instruktør Jonas
               Poher Rasmussen. Kilde: Reel Pictures
             </p>
-            <button><a href="/">Påmind mig</a></button>
+            <button onclick="on()">Påmind mig</button>
+            <div id="overlay">
+              <div class="container">
+                <label for="fname">Fornavn</label>
+                <form action="upcoming.html">
+                  <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Dit fornavn.."
+                  />
+
+                  <label for="lname">Efternavn</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    placeholder="Dit efternavn.."
+                  />
+
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="emailaddress"
+                    placeholder="Din e-mail.."
+                  />
+
+                  <label for="subject">Leje af lokaler</label>
+                  <textarea
+                    id="subject"
+                    name="subject"
+                    placeholder="Skriv din henvendelse her.."
+                    style="height: 200px"
+                  ></textarea>
+
+                  <input id="send" onclick="off()" type="submit" value="Send" />
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -136,7 +214,46 @@
             ultimative anerkendelse, har de glemt at livets måltider ikke er
             gratis. Alt har en pris. Kilde: Nordisk Film
           </p>
-          <button><a href="/">Påmind mig</a></button>
+          <button onclick="on()">Påmind mig</button>
+          <div id="overlay">
+            <div class="container">
+              <label for="fname">Fornavn</label>
+              <form action="upcoming.html">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Dit fornavn.."
+                />
+
+                <label for="lname">Efternavn</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Dit efternavn.."
+                />
+
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="emailaddress"
+                  placeholder="Din e-mail.."
+                />
+
+                <label for="subject">Leje af lokaler</label>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Skriv din henvendelse her.."
+                  style="height: 200px"
+                ></textarea>
+
+                <input id="send" onclick="off()" type="submit" value="Send" />
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -149,5 +266,6 @@
     </footer>
     <script src="scripts/login.js"></script>
     <script src="scripts/burger.js"></script>
+    <script src="scripts/upcoming.js"></script>
   </body>
 </html>
