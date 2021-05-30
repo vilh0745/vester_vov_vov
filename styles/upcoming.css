@@ -21,6 +21,7 @@ main {
 .baggrund_wrapper {
   padding: 10px;
   margin: 25px;
+  padding-bottom: 33px;
 }
 
 .dato {
@@ -34,7 +35,7 @@ main {
 }
 
 .film2 {
-  padding-top: 33px;
+  padding-top: 10px;
 }
 
 .film2 p,

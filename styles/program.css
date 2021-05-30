@@ -35,6 +35,8 @@ main {
 .baggrund_wrapper {
   padding: 10px;
   margin: 25px;
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 
 .film2 p,
