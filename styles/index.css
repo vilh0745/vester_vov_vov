@@ -201,7 +201,7 @@ h2 {
 @media (min-width: 768px) {
   .film_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     justify-content: space-around;
   }
