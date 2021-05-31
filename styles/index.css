@@ -70,19 +70,16 @@ h2 {
 .film_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 30px;
   justify-content: space-around;
+  padding: 20px;
+  margin: 40px;
 }
 
 .film_section {
   margin: 0 -9999rem;
   padding: 0 9999rem;
   background: #430a08;
-}
-
-.film_wrapper {
-  padding: 20px;
-  margin: 40px;
 }
 
 .film_wrapper h3 {
@@ -202,7 +199,7 @@ h2 {
   .film_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
     justify-content: space-around;
   }
 
