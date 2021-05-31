@@ -67,7 +67,7 @@ h3 {
 @media (min-width: 1200px) {
   .top {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .top .billet_element {
@@ -157,4 +157,8 @@ iframe {
 
 .billetelement img {
   width: 100%;
+}
+
+.film_wrapper img {
+  height: 63%;
 }

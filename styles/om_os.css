@@ -213,4 +213,9 @@ iframe {
     grid-column: 1 / 2;
     grid-row: 2;
   }
+
+  main img {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
