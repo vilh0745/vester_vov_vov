@@ -12,7 +12,6 @@ h1 {
   text-align: center;
   justify-content: center;
   font-size: 2rem;
-  padding-top: 5vw;
 }
 h2 {
   text-align: center;
@@ -141,9 +140,34 @@ section {
   background-color: #430a08;
   color: white;
   border: none;
-  position: relative;
+  position: absolute;
   margin-left: 1vw;
-  top: 14vw;
+  top: 13.5vw;
+  font-family: futura-pt, sans-serif;
+}
+
+#d2 {
+  left: 13vw;
+}
+
+#d3 {
+  left: 26vw;
+}
+
+#d4 {
+  left: 38.5vw;
+}
+
+#d5 {
+  left: 51.5vw;
+}
+
+#d6 {
+  left: 64.5vw;
+}
+
+#d7 {
+  left: 77vw;
 }
 
 .dato:hover {
@@ -153,10 +177,11 @@ section {
 #knapper_film {
   margin-top: 10vw;
   background-image: url(../img/filmrulle.svg);
-  background-size: cover;
+  background-size: contain;
   height: 30vw;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 /*media 768*/
@@ -178,8 +203,24 @@ section {
     font-size: 1.4rem;
   }
 
-  /*bestil billetter knapper på film plakater*/
-  /*knap på om os*/
+  h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+  }
+  h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 12vw;
+  }
+
+  .knap_vov {
+    font-size: 1rem;
+    background-color: #430a08;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 /*media 1200*/
@@ -189,7 +230,78 @@ section {
     color: white;
     font-size: 2rem;
   }
-}
 
-/*dias show kanpper*/
-/*knap på om os*/
+  section {
+    padding-top: 2vw;
+  }
+
+  h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 6rem;
+  }
+  h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 4vw;
+  }
+
+  #knapper_film {
+    margin-top: 0;
+  }
+
+  #prevBtn,
+  #nextBtn {
+    background-color: #430a08;
+    border: none;
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .dato {
+    border-radius: 12px;
+    width: 8vw;
+    height: 6vw;
+    background-color: #430a08;
+    color: white;
+    border: none;
+    position: absolute;
+    margin-left: 1vw;
+    top: 14vw;
+    font-family: futura-pt, sans-serif;
+  }
+
+  #d2 {
+    left: 9vw;
+  }
+
+  #d3 {
+    left: 18vw;
+  }
+
+  #d4 {
+    left: 27vw;
+  }
+
+  #d5 {
+    left: 36vw;
+  }
+
+  #d6 {
+    left: 45vw;
+  }
+
+  #d7 {
+    left: 54vw;
+  }
+
+  .knap_vov {
+    font-size: 1.5rem;
+    background-color: #430a08;
+    color: white;
+    cursor: pointer;
+  }
+}

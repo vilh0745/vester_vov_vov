@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/mutual_style.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="https://use.typekit.net/uat1saz.css" />
+    <link rel="shortcut icon" href="img/fy_bi_sort.svg" type="image/x-icon">
   </head>
   <body>
     <header>
@@ -17,6 +18,7 @@
       /></a>
       <nav>
         <ul id="menu">
+          <img src="img/fy_bi.svg" alt="fy og bi" class="hidden" />
           <li><a href="program.html">Film i Biografen</a></li>
           <li><a href="upcoming.html">Kommende Film</a></li>
           <li><a href="/">Find Din Billetbestilling</a></li>
@@ -36,8 +38,12 @@
     </header>
     <main>
       <section class="diasshow">
+        <div id="overskrift_logo">
+        <div id="overskrift">
         <h1>VESTER VOV VOV</h1>
         <h2>ART CINEMA & CAFE - SIDEN 1975</h2>
+      </div>
+    </div>
         <div class="diasshow_container">
           <div class="dias_slide">
         
@@ -48,13 +54,13 @@
         <button id="nextBtn">›</button>
       </div>
         <div id="knapper_film">
-          <button class="dato">Man</button>
-          <button class="dato">Tir</button>
-          <button class="dato">Ons</button>
-          <button class="dato">Tor</button>
-          <button class="dato">Fre</button>
-          <button class="dato">Lør</button>
-          <button class="dato">Søn</button>
+          <button class="dato" id="d1">Man</button>
+          <button class="dato" id="d2">Tir</button>
+          <button class="dato" id="d3">Ons</button>
+          <button class="dato" id="d4">Tor</button>
+          <button class="dato" id="d5">Fre</button>
+          <button class="dato" id="d6">Lør</button>
+          <button class="dato" id="d7">Søn</button>
         </div>
       </section>
       <section class="film_section">
@@ -114,7 +120,7 @@
         <h3 class="cafe_tekst">
           Kom ned og få en kop kaffe eller en drink og tag den med dig i salen.
         </h3>
-        <img src="img/vestervovvovbillede-2.webp" alt="vester vov vov" />
+        <img src="img/Front.webp" alt="vester vov vov" />
         <button class="knap_vov">
           <a href="om_os.html">Læs mere om Vester Vov Vov</a>
         </button>
