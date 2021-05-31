@@ -8,13 +8,13 @@ const prevBtn = document.querySelector("#prevBtn");
 
 // Image List
 images[0] = `<a href="movie_site.html" id="dias1">
-              <img src="img/MinariDias.webp" style="width: 100%" />
+              <img src="img/MinariDias.webp" alt="Minari" style="width: 100%" />
             </a>`;
-images[1] = `<a href="movie_site.html" id="dias1">
-<img src="img/soundofmetalDias.webp" style="width: 100%" />
+images[1] = `<a href="movie_site.html" id="dias2">
+<img src="img/soundofmetalDias.webp" alt="SoundOfMetal" style="width: 100%" />
 </a>`;
-images[2] = `<a href="movie_site.html" id="dias1">
-<img src="img/MarcoEffektenDias.webp" style="width: 100%" />
+images[2] = `<a href="movie_site.html" id="dias3">
+<img src="img/MarcoEffektenDias.webp" alt="Marco" style="width: 100%" />
 </a>`;
 
 window.addEventListener("load", sidenVises);
@@ -78,7 +78,7 @@ function prevSlide() {
     // Add 1 to Index
     i--;
   } else {
-    // Reset Back To 3
+    // Reset Back To 2
     i = 2;
   }
 
