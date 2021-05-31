@@ -9,15 +9,12 @@ const prevBtn = document.querySelector("#prevBtn");
 // Image List
 images[0] = `<a href="movie_site.html" id="dias1">
               <img src="img/MinariDias.webp" style="width: 100%" />
-              <div class="text">Caption Text</div>
             </a>`;
 images[1] = `<a href="movie_site.html" id="dias1">
 <img src="img/soundofmetalDias.webp" style="width: 100%" />
-<div class="text">Caption Text</div>
 </a>`;
 images[2] = `<a href="movie_site.html" id="dias1">
 <img src="img/MarcoEffektenDias.webp" style="width: 100%" />
-<div class="text">Caption Text</div>
 </a>`;
 
 window.addEventListener("load", sidenVises);
