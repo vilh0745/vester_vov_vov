@@ -20,8 +20,21 @@ h2 {
   padding-bottom: 12vw;
 }
 
-section {
-  padding-top: 10vw;
+#overskrift_logo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+#overskrift_logo h1,
+#overskrift_logo h2 {
+  position: relative;
+}
+
+#overskrift_logo img {
+  float: left;
+}
+
+#overskrift_logo img {
 }
 
 /*sektion 3 - cafe */
@@ -46,6 +59,13 @@ section {
 
 /*sektion 2 - film */
 
+#film_h2 {
+  color: white;
+  padding-top: 5vw;
+  font-size: 1.5rem;
+  padding-bottom: 1vw;
+}
+
 .film_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -61,7 +81,6 @@ section {
 
 .film_wrapper {
   padding: 20px;
-  padding-top: 8vw;
   margin: 40px;
 }
 
@@ -85,17 +104,11 @@ section {
   padding: 14px 9px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 15px;
   margin: 12px 0px;
   cursor: pointer;
   border-radius: 10px;
-}
-
-.Læs_bestil_wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
 }
 
 /*sektion 1 - dias og billet */
@@ -127,10 +140,6 @@ section {
 #nextBtn:hover {
   cursor: pointer;
   background-color: #ab1500;
-}
-
-#billet_element {
-  margin-top: 8vw;
 }
 
 .dato {
