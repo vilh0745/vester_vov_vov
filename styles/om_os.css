@@ -28,13 +28,16 @@ section a {
   background-color: #430a08;
   border: none;
   color: white;
-  padding: 7px 9px;
+  padding: 14px 9px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
+  margin: 12px 0px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
 }
 
 .kontakt:hover {
