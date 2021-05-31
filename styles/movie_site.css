@@ -161,4 +161,5 @@ iframe {
 
 .film_wrapper img {
   height: 63%;
+  object-fit: cover;
 }
