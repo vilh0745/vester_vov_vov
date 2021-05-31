@@ -11,30 +11,18 @@ img {
 h1 {
   text-align: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 h2 {
   text-align: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-bottom: 12vw;
 }
 
-#overskrift_logo {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-}
-
-#overskrift_logo h1,
-#overskrift_logo h2 {
-  position: relative;
-}
-
-#overskrift_logo img {
-  float: left;
-}
-
-#overskrift_logo img {
+#overskrift {
+  margin: -2vw;
+  margin-top: -4vw;
 }
 
 /*sektion 3 - cafe */
@@ -54,7 +42,20 @@ h2 {
 .knap_vov {
   background-color: #430a08;
   color: white;
+  border: none;
   cursor: pointer;
+  border-radius: 12px;
+  margin-top: 1vw;
+  width: 35vw;
+  height: 4vw;
+}
+
+.knap_vov a {
+  font-family: futura-pt, sans-serif;
+}
+
+.knap_vov:hover {
+  background-color: #ab1500;
 }
 
 /*sektion 2 - film */
@@ -127,6 +128,7 @@ h2 {
   font-size: 2rem;
   position: relative;
   width: 100%;
+  z-index: 10;
 }
 
 #prev_nxt_btn {
@@ -134,6 +136,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+  z-index: 10;
 }
 
 #prevBtn:hover,
@@ -215,12 +218,12 @@ h2 {
   h1 {
     text-align: center;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   h2 {
     text-align: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2.1rem;
     padding-bottom: 12vw;
   }
 
@@ -229,6 +232,20 @@ h2 {
     background-color: #430a08;
     color: white;
     cursor: pointer;
+  }
+
+  #prevBtn,
+  #nextBtn {
+    background-color: #430a08;
+    border: none;
+    color: white;
+    font-size: 4rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .vester img {
+    height: 50vw;
   }
 }
 
@@ -247,13 +264,24 @@ h2 {
   h1 {
     text-align: center;
     justify-content: center;
-    font-size: 6rem;
+    font-size: 7rem;
   }
   h2 {
     text-align: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 3.3rem;
     padding-bottom: 4vw;
+  }
+
+  #film_h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  .cafe {
+    font-size: 3rem;
+    padding-bottom: 0;
   }
 
   #knapper_film {
@@ -268,6 +296,7 @@ h2 {
     font-size: 4rem;
     position: relative;
     width: 100%;
+    top: 4vw;
   }
 
   .dato {
@@ -308,9 +337,12 @@ h2 {
   }
 
   .knap_vov {
+    width: 35vw;
+    height: 4vw;
     font-size: 1.5rem;
-    background-color: #430a08;
-    color: white;
-    cursor: pointer;
+  }
+
+  .vester img {
+    height: 35vw;
   }
 }
