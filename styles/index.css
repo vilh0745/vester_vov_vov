@@ -228,6 +228,12 @@ h2 {
   #d7 {
     left: 72vw;
   }
+
+  .film_wrapper h3 {
+    color: white;
+    font-size: 1.1rem;
+    padding-bottom: 1vw;
+  }
 }
 
 /*media 768*/
@@ -257,7 +263,7 @@ h2 {
   h2 {
     text-align: center;
     justify-content: center;
-    padding-bottom: 12vw;
+    padding-bottom: 5vw;
   }
 
   .knap_vov {
@@ -280,6 +286,11 @@ h2 {
   .vester img {
     height: 50vw;
   }
+
+  .film_wrapper h3 {
+    color: white;
+    font-size: 1.1rem;
+  }
 }
 
 /*media 1200*/
@@ -291,7 +302,7 @@ h2 {
   }
 
   section {
-    padding-top: 2vw;
+    padding-top: 0vw;
   }
 
   h1 {
@@ -376,6 +387,11 @@ h2 {
   .vester img {
     height: 35vw;
   }
+
+  .film_wrapper h3 {
+    color: white;
+    font-size: 1.3rem;
+  }
 }
 /*media 1520*/
 
@@ -415,5 +431,10 @@ h2 {
 
   #d7 {
     left: 54vw;
+  }
+
+  .film_wrapper h3 {
+    color: white;
+    font-size: 1.4rem;
   }
 }
