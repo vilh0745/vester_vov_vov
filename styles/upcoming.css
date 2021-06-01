@@ -157,6 +157,28 @@ button:hover {
 
 /* desktop under her */
 
+@media (min-width: 768px) {
+  .film {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .baggrund_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  section h2 {
+    padding-top: 0;
+  }
+
+  .overskrift {
+    padding-top: 4%;
+  }
+}
+
 @media (min-width: 1200px) {
   .overskrift {
     font-size: 3rem;
