@@ -93,6 +93,18 @@ h3 {
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
+#filmrulle_top {
+  background-image: url(../img/rulletopArtboard\ 1.svg);
+}
+
+#filmrulle_knapper {
+  display: inline-flex;
+}
+
+#filmrulle_bund {
+  background-image: url(../img/rullebundArtboard\ 1.svg);
+}
+
 @media (min-width: 768px) {
   #overlay {
     position: fixed; /* Sit on top of the page content */

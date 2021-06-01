@@ -41,17 +41,23 @@ h2 {
 
 .knap_vov {
   background-color: #430a08;
-  color: white;
   border: none;
+  color: white;
+  padding: 14px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  margin: 12px 0px;
   cursor: pointer;
-  border-radius: 12px;
-  margin-top: 1vw;
-  width: 40vw;
-  height: 4vw;
+  border-radius: 10px;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
 }
 
-.knap_vov :hover {
+.knap_vov:hover {
   background-color: #ab1500;
+  cursor: pointer;
 }
 
 .knap_vov a {
@@ -64,7 +70,7 @@ h2 {
   color: white;
   padding-top: 5vw;
   font-size: 1.5rem;
-  padding-bottom: 1vw;
+  padding-bottom: 0vw;
 }
 
 .film_wrapper {
@@ -74,6 +80,7 @@ h2 {
   justify-content: space-around;
   padding: 20px;
   margin: 40px;
+  margin-top: 0;
 }
 
 .film_section {
@@ -254,6 +261,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     justify-content: space-around;
+    padding-top: 4vw;
   }
 
   .film_section p {
@@ -278,7 +286,7 @@ h2 {
 
   .knap_vov {
     font-size: 1rem;
-    background-color: #ab1500;
+    background-color: #430a08;
     color: white;
     cursor: pointer;
   }
