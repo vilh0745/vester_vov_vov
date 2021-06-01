@@ -11,10 +11,10 @@ images[0] = `<a href="movie_site_minari.html" id="dias1">
               <img src="img/minari_dias.webp" alt="Minari" style="width: 100%" />
             </a>`;
 images[1] = `<a href="movie_site_MOM.html" id="dias2">
-<img src="img/m_o_murder_dias.webp" alt="Memories of Murder" style="width: 100%" />
+<img src="img/memories-of-murder-poster.webp" alt="Memories of Murder" style="width: 100%" />
 </a>`;
 images[2] = `<a href="movie_site_nomad.html" id="dias3">
-<img src="img/nomad_dias.webp" alt="Nomadland" style="width: 100%" />
+<img src="img/nomadlanddias.webp" alt="Nomadland" style="width: 100%" />
 </a>`;
 
 window.addEventListener("load", sidenVises);

@@ -16,7 +16,7 @@ h1 {
 h2 {
   text-align: center;
   justify-content: center;
-  font-size: clamp(1.2rem, 0.5483rem + 2.8966vw, 3.3rem);
+  font-size: clamp(1.2rem, 0.5483rem + 2.8966vw, 3.1rem);
   padding-bottom: 8vw;
 }
 
