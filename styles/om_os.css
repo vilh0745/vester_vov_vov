@@ -150,6 +150,25 @@ iframe {
   padding-top: calc(100% / (16 / 9));
 }
 
+@media (min-width: 768px) {
+  .oppe,
+  .baggrund_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .img_wrapper {
+    padding-top: 28px;
+  }
+
+  .galleri {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
 @media (min-width: 1200px) {
   .oppe {
     display: grid;
