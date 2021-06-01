@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>Billetbestilling</title>
+    <title>Billetbestilling - Vester Vov Vov</title>
     <link rel="stylesheet" href="styles/mutual_style.css" />
     <link rel="stylesheet" href="styles/movie_site.css" />
     <link rel="stylesheet" href="https://use.typekit.net/uat1saz.css" />
@@ -56,7 +56,10 @@
             <div class="billetelement">
               <img src="img/filmrulle.svg" alt="filmrulle" />
             </div>
-            <a href=""> <button id="bestil">Bestil billetter</button></a> 
+            <a href="#" class="billet_knap"> <button id="bestil" onclick="on()">Bestil billetter</button></a> 
+          </div>
+          <div id="overlay">
+            <img src="img/biografsal.webp" onclick="off()" alt="Vælg Sæde">
           </div>
         </div>
 
@@ -107,7 +110,7 @@
           <div class="film_wrapper">
 
             <div class="film1">
-              <a href="movie_site.html"><img src="img/som.webp" alt="SOM" /></a>
+              <a href="movie_site.html"><img src="img/SoM.webp" alt="SOM" /></a>
               <h3>Sound of Metal</h3>
               <p>
                 2020'ernes ´Smagen af rust og ben´ har den britiske skuespiller og rapper Riz Ahmed i rollen som trommeslageren Ruben, der i bogstaveligste forstand er på stikkerne: Han kæmper med at lægge sit misbrug bag sig og bryde igennem med musikken. 
@@ -145,5 +148,6 @@
     </footer>
     <script src="scripts/login.js"></script>
     <script src="scripts/burger.js"></script>
+    <script src="scripts/movie_site.js"></script>
   </body>
 </html>

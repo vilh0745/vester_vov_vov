@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <title>Billetbestilling</title>
+    <title>Billetbestilling - Vester Vov Vov</title>
     <link rel="stylesheet" href="styles/mutual_style.css" />
     <link rel="stylesheet" href="styles/movie_site.css" />
     <link rel="stylesheet" href="https://use.typekit.net/uat1saz.css" />
@@ -56,7 +56,11 @@
             <div class="billetelement">
               <img src="img/filmrulle.svg" alt="filmrulle" />
             </div>
-            <a class="billet_knap" href=""> <button id="bestil">Bestil billetter</button></a> 
+        
+            <a class="billet_knap" href="#"> <button id="bestil" onclick="on()">Bestil billetter</button></a> 
+          </div>
+          <div id="overlay">
+            <img src="img/biografsal.webp" onclick="off()" alt="Vælg Sæde">
           </div>
         </div>
 
@@ -93,7 +97,7 @@
           <div class="film_wrapper">
 
             <div class="film1">
-              <a href="movie_site_minari.html"><img src="img/Minari.webp" width="800" height="1200" alt="Minari" /></a>
+              <a href="movie_site_minari.html"><img src="img/min.webp" width="800" height="1200" alt="Minari" /></a>
               <h3>Minari</h3>
               <p>
              Minari som vandt en Golden Globe for bedste ikke amerikanske film bliver vores åbningsfilm. Minari er en bevægende film om det, der forbinder os med vores rødder. I Minari møder vi en koreansk-amerikansk familie, som flytter til en lille farm i Arkansas for at forfølge deres egen amerikanske drøm. 
@@ -102,7 +106,7 @@
             </div>
 
             <div class="film2">
-              <a href="movie_site_nomad.html"><img src="img/nom.webp" width="850" height="1201" alt="nomadland" /></a>
+              <a href="movie_site_nomad.html"><img src="img/nomad.webp" width="850" height="1201" alt="nomadland" /></a>
               <h3>Nomadland</h3>
               <p>
                Chloé Zhaos film er bygget op omkring Frances McDormands præstation på samme måde, som hendes nøgterne, humanistiske The Rider var bygget op omkring den ikke-professionelle skuespiller Lilly Jandreau.  
@@ -131,5 +135,6 @@
     </footer>
     <script src="scripts/login.js"></script>
     <script src="scripts/burger.js"></script>
+    <script src="scripts/movie_site.js"></script>
   </body>
 </html>
