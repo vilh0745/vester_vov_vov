@@ -183,6 +183,10 @@ iframe {
     left: 24vw;
   }
 
+  .img_wrapper {
+    padding-top: 0;
+  }
+
   .baggrund_wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
