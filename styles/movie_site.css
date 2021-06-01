@@ -93,16 +93,60 @@ h3 {
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
-#filmrulle_top {
-  background-image: url(../img/rulletopArtboard\ 1.svg);
+.dato {
+  border-radius: 12px;
+  width: 10vw;
+  height: 8vw;
+  background-color: #430a08;
+  color: white;
+  border: none;
+  position: absolute;
+  margin-left: 1vw;
+  top: 11vw;
+  left: 1vw;
+  font-family: futura-pt, sans-serif;
 }
 
-#filmrulle_knapper {
-  display: inline-flex;
+#knapper_film button {
+  font-size: 0.5rem;
 }
 
-#filmrulle_bund {
-  background-image: url(../img/rullebundArtboard\ 1.svg);
+#d2 {
+  left: 12.5vw;
+}
+
+#d3 {
+  left: 24.5vw;
+}
+
+#d4 {
+  left: 37vw;
+}
+
+#d5 {
+  left: 49vw;
+}
+
+#d6 {
+  left: 61vw;
+}
+
+#d7 {
+  left: 73.5vw;
+}
+
+.dato:hover {
+  background-color: #ab1500;
+}
+
+#knapper_film {
+  margin-top: 0vw;
+  background-image: url(../img/filmrulle.svg);
+  background-size: contain;
+  height: 30vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -160,6 +204,49 @@ h3 {
   .top h2 {
     display: flex;
     place-content: center;
+  }
+
+  .dato {
+    border-radius: 12px;
+    width: 7vw;
+    height: 5.5vw;
+    background-color: #430a08;
+    color: white;
+    border: none;
+    position: absolute;
+    margin-left: 1vw;
+    top: 12.5vw;
+    left: 1vw;
+    font-family: futura-pt, sans-serif;
+  }
+
+  #knapper_film button {
+    font-size: 0.7rem;
+    padding-top: 1vw;
+  }
+
+  #d2 {
+    left: 9vw;
+  }
+
+  #d3 {
+    left: 17vw;
+  }
+
+  #d4 {
+    left: 25vw;
+  }
+
+  #d5 {
+    left: 33vw;
+  }
+
+  #d6 {
+    left: 41vw;
+  }
+
+  #d7 {
+    left: 50vw;
   }
 }
 
@@ -245,6 +332,112 @@ h3 {
 
   h4 {
     padding-top: 10px;
+  }
+
+  .dato {
+    border-radius: 12px;
+    width: 4.5vw;
+    height: 4vw;
+    background-color: #430a08;
+    color: white;
+    border: none;
+    position: absolute;
+    margin-left: 1vw;
+    top: 4.5vw;
+    left: 1vw;
+    font-family: futura-pt, sans-serif;
+  }
+
+  #knapper_film button {
+    font-size: 0.7rem;
+  }
+
+  #d2 {
+    left: 6.5vw;
+  }
+
+  #d3 {
+    left: 12vw;
+  }
+
+  #d4 {
+    left: 17.5vw;
+  }
+
+  #d5 {
+    left: 23vw;
+  }
+
+  #d6 {
+    left: 28.5vw;
+  }
+
+  #d7 {
+    left: 34vw;
+  }
+
+  #knapper_film {
+    margin-top: 0vw;
+    background-image: url(../img/filmrulle.svg);
+    background-size: contain;
+    height: 12vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+}
+
+@media (min-width: 1600px) {
+  .dato {
+    border-radius: 12px;
+    width: 4.5vw;
+    height: 4vw;
+    background-color: #430a08;
+    color: white;
+    border: none;
+    position: absolute;
+    margin-left: 1vw;
+    top: 4.5vw;
+    left: 1.5vw;
+    font-family: futura-pt, sans-serif;
+  }
+
+  #knapper_film button {
+    font-size: 0.7rem;
+  }
+
+  #d2 {
+    left: 7vw;
+  }
+
+  #d3 {
+    left: 12.5vw;
+  }
+
+  #d4 {
+    left: 18vw;
+  }
+
+  #d5 {
+    left: 23.5vw;
+  }
+
+  #d6 {
+    left: 29vw;
+  }
+
+  #d7 {
+    left: 34.5vw;
+  }
+
+  #knapper_film {
+    margin-top: 0vw;
+    background-image: url(../img/filmrulle.svg);
+    background-size: contain;
+    height: 12vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
   }
 }
 
