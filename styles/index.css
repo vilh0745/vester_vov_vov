@@ -11,13 +11,13 @@ img {
 h1 {
   text-align: center;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: clamp(2.4rem, 1.1276rem + 5.6552vw, 6.5rem);
 }
 h2 {
   text-align: center;
   justify-content: center;
-  font-size: 1.2rem;
-  padding-bottom: 12vw;
+  font-size: clamp(1.2rem, 0.5483rem + 2.8966vw, 3.3rem);
+  padding-bottom: 8vw;
 }
 
 #overskrift {
@@ -189,6 +189,47 @@ h2 {
   position: relative;
 }
 
+/*media 670*/
+
+@media (max-width: 670px) {
+  .dato {
+    border-radius: 12px;
+    width: 10vw;
+    height: 9vw;
+    background-color: #430a08;
+    color: white;
+    border: none;
+    position: absolute;
+    margin-left: 5px;
+    top: 13.5vw;
+    font-family: futura-pt, sans-serif;
+  }
+
+  #d2 {
+    left: 12vw;
+  }
+
+  #d3 {
+    left: 24vw;
+  }
+
+  #d4 {
+    left: 36vw;
+  }
+
+  #d5 {
+    left: 48vw;
+  }
+
+  #d6 {
+    left: 60vw;
+  }
+
+  #d7 {
+    left: 72vw;
+  }
+}
+
 /*media 768*/
 
 @media (min-width: 768px) {
@@ -211,12 +252,10 @@ h2 {
   h1 {
     text-align: center;
     justify-content: center;
-    font-size: 4.5rem;
   }
   h2 {
     text-align: center;
     justify-content: center;
-    font-size: 2.1rem;
     padding-bottom: 12vw;
   }
 
@@ -257,12 +296,10 @@ h2 {
   h1 {
     text-align: center;
     justify-content: center;
-    font-size: 7rem;
   }
   h2 {
     text-align: center;
     justify-content: center;
-    font-size: 3.3rem;
     padding-bottom: 4vw;
   }
 
@@ -292,6 +329,56 @@ h2 {
     top: 4vw;
   }
 
+  .dato {
+    border-radius: 12px;
+    width: 7vw;
+    height: 6vw;
+    background-color: #430a08;
+    color: white;
+    border: none;
+    position: absolute;
+    margin-left: 1vw;
+    top: 14vw;
+    font-family: futura-pt, sans-serif;
+  }
+
+  #d2 {
+    left: 8.5vw;
+  }
+
+  #d3 {
+    left: 17.5vw;
+  }
+
+  #d4 {
+    left: 26vw;
+  }
+
+  #d5 {
+    left: 34.5vw;
+  }
+
+  #d6 {
+    left: 43vw;
+  }
+
+  #d7 {
+    left: 51.5vw;
+  }
+
+  .knap_vov {
+    width: 35vw;
+    height: 4vw;
+    font-size: 1.5rem;
+  }
+
+  .vester img {
+    height: 35vw;
+  }
+}
+/*media 1520*/
+
+@media (min-width: 1520px) {
   .dato {
     border-radius: 12px;
     width: 8vw;
@@ -328,19 +415,4 @@ h2 {
   #d7 {
     left: 54vw;
   }
-
-  .knap_vov {
-    width: 35vw;
-    height: 4vw;
-    font-size: 1.5rem;
-  }
-
-  .vester img {
-    height: 35vw;
-  }
 }
-
-@media (min-width: 1520px) {
-}
-
-/*mellemrum over titler på mobile*/
