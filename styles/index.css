@@ -309,6 +309,11 @@ h2 {
     color: white;
     font-size: 1.1rem;
   }
+
+  .vester {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 /*media 1200*/
@@ -397,9 +402,7 @@ h2 {
   }
 
   .knap_vov {
-    width: 35vw;
-    height: 4vw;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .vester img {
@@ -408,6 +411,11 @@ h2 {
 
   #space {
     margin-bottom: 4vw;
+  }
+
+  .vester {
+    margin-top: 0;
+    padding-top: 4vw;
   }
 }
 /*media 1520*/
