@@ -242,6 +242,7 @@ footer {
 
 @media (min-width: 1200px) {
   header {
+    display: none;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

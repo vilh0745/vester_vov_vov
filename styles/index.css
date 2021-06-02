@@ -132,9 +132,9 @@ h2 {
 
 #prevBtn,
 #nextBtn {
-  background-color: #430a08;
+  background-color: rgb(241, 240, 240);
   border: none;
-  color: white;
+  color: #430a08;
   font-size: 2rem;
   position: relative;
   width: 100%;
