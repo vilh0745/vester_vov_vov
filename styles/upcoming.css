@@ -243,7 +243,7 @@ button:hover {
   #overlay {
     width: 50%; /* Full width (cover the whole page) */
     height: 50%; /* Full height (cover the whole page) */
-    top: 10vw;
+    top: 17vw;
     left: 24vw;
   }
 }

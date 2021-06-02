@@ -167,6 +167,13 @@ iframe {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
+
+  #overlay {
+    width: 50%; /* Full width (cover the whole page) */
+    height: 50%; /* Full height (cover the whole page) */
+    top: 23vw;
+    left: 24vw;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -179,7 +186,7 @@ iframe {
   #overlay {
     width: 50%; /* Full width (cover the whole page) */
     height: 50%; /* Full height (cover the whole page) */
-    top: 10vw;
+    top: 17vw;
     left: 24vw;
   }
 
