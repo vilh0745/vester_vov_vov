@@ -19,7 +19,7 @@ video {
 
 /********** Header ***********/
 header img {
-  width: 80px;
+  width: 300px;
 }
 
 header {
@@ -71,6 +71,10 @@ header nav {
 
   header {
     z-index: 100;
+  }
+
+  header img {
+    width: 80px;
   }
 }
 
@@ -240,6 +244,7 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     position: sticky;
     z-index: 100;
     top: 0;
@@ -263,7 +268,7 @@ footer {
   }
 
   header img {
-    max-width: 100px;
+    width: 50vw;
   }
 
   main {
