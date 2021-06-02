@@ -367,7 +367,7 @@ h2 {
     color: white;
     border: none;
     position: absolute;
-    margin-left: 1vw;
+    margin-left: 4vw;
     top: 14vw;
     font-family: futura-pt, sans-serif;
   }
@@ -406,9 +406,8 @@ h2 {
     height: 35vw;
   }
 
-  .film_wrapper h3 {
-    color: white;
-    font-size: 1.3rem;
+  #space {
+    margin-bottom: 4vw;
   }
 }
 /*media 1520*/
