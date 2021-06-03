@@ -1,4 +1,4 @@
-// When the user scrolls down 50px from the top of the document, remove the header's logo
+// When the user scrolls down 20px from the top of the document, remove the header's logo
 window.onscroll = function () {
   scrollFunction();
 };
