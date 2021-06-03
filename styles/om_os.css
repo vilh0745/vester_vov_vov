@@ -33,7 +33,6 @@ section a {
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
-  margin: 12px 0px;
   cursor: pointer;
   border-radius: 10px;
   font-family: futura-pt, sans-serif;
@@ -135,7 +134,7 @@ section.gallery h3 {
   place-content: center;
 }
 
-iframe {
+/* iframe {
   position: absolute;
   inset: 0;
   height: 100%;
@@ -148,6 +147,39 @@ iframe {
   height: 0;
 
   padding-top: calc(100% / (16 / 9));
+} */
+
+.frame {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.socials {
+  display: flex;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.socials img {
+  width: 30px;
+}
+
+address {
+  font-style: normal;
 }
 
 @media (min-width: 768px) {

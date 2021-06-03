@@ -46,26 +46,33 @@
               controls
               src="https://lunagreenhartvigsen.dk/kea/05_indhold/02_redesign/video/vov_vov_video.mp4"
             ></video>
-
-            <h3>Kontakt Os</h3>
-            <p>
-              Mail: mail@vestervovvov.dk <br />
-              Tlf: +45 33 24 42 00
-            </p>
-            <a
-              href="https://www.facebook.com/vestervovvov/about/?ref=page_internal"
-              class="facebook"
-              >Vov Vov Facebook</a
-            ><br />
-            <a
-              href="https://www.instagram.com/cafe_biograf_vester_vov_vov/"
-              class="instagram"
-              >Vov Vov Instagram</a
-            ><br />
-            <p>
-              Lej biograf og café
-              <button onclick="on()" class="kontakt">Send Forespørgsel</button>
-            </p>
+            <address>
+              <h3>Kontakt Os</h3>
+              <p>
+                Mail:
+                <a href="mailto:mail@vestervovvov.dk">mail@vestervovvov.dk</a
+                ><br />
+                Tlf:<a href="tel:+45 33 24 42 00"> +45 33 24 42 00</a>
+              </p>
+              <div class="socials">
+                <a
+                  href="https://www.facebook.com/vestervovvov/about/?ref=page_internal"
+                  class="facebook"
+                  ><img src="img/face_logo.svg" alt="facebook" /></a
+                ><br />
+                <a
+                  href="https://www.instagram.com/cafe_biograf_vester_vov_vov/"
+                  class="instagram"
+                  ><img src="img/insta_logo.svg" alt="instagram"
+                /></a>
+              </div>
+              <p>
+                Lej biograf og café:
+                <button onclick="on()" class="kontakt">
+                  Send Forespørgsel
+                </button>
+              </p>
+            </address>
             <div id="overlay">
               <div class="container">
                 <label for="fname">Fornavn</label>
@@ -149,7 +156,16 @@
               bor med sin familie.
             </p>
           </div>
-          <img src="img/maps.webp" alt="Google Maps" />
+          <div class="frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.980204700368!2d12.551978016233456!3d55.67194438053182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253752ee9f05b%3A0x14aba68a6c195953!2sVester%20Vov%20Vov!5e0!3m2!1sda!2sdk!4v1622730747278!5m2!1sda!2sdk"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </section>
       <section class="gallery">
@@ -184,7 +200,9 @@
       <p>
         <span class="footer_left">Absalonsgade 5</span>
         <span class="footer_middle">1658 København V</span>
-        <span class="footer_right">tw@vestervovvov.dk</span>
+        <span class="footer_right"
+          ><a href="mailto:tw@vestervovvov.dk">tw@vestervovvov.dk</a></span
+        >
       </p>
     </footer>
     <script src="scripts/login.js"></script>
