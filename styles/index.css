@@ -155,47 +155,6 @@ h2 {
   background-color: #ab1500;
 }
 
-.dato {
-  border-radius: 12px;
-  width: 11vw;
-  height: 9vw;
-  background-color: #430a08;
-  color: white;
-  border: none;
-  position: absolute;
-  margin-left: 1vw;
-  top: 13.5vw;
-  font-family: futura-pt, sans-serif;
-}
-
-#d2 {
-  left: 13vw;
-}
-
-#d3 {
-  left: 26vw;
-}
-
-#d4 {
-  left: 38.5vw;
-}
-
-#d5 {
-  left: 51.5vw;
-}
-
-#d6 {
-  left: 64.5vw;
-}
-
-#d7 {
-  left: 77vw;
-}
-
-.dato:hover {
-  background-color: #ab1500;
-}
-
 #knapper_film {
   margin-top: 10vw;
   background-image: url(../img/filmrulle.svg);
@@ -209,43 +168,6 @@ h2 {
 /*media 670*/
 
 @media (max-width: 670px) {
-  .dato {
-    border-radius: 12px;
-    width: 10vw;
-    height: 9vw;
-    background-color: #430a08;
-    color: white;
-    border: none;
-    position: absolute;
-    margin-left: 5px;
-    top: 13.5vw;
-    font-family: futura-pt, sans-serif;
-  }
-
-  #d2 {
-    left: 12vw;
-  }
-
-  #d3 {
-    left: 24vw;
-  }
-
-  #d4 {
-    left: 36vw;
-  }
-
-  #d5 {
-    left: 48vw;
-  }
-
-  #d6 {
-    left: 60vw;
-  }
-
-  #d7 {
-    left: 72vw;
-  }
-
   .film_wrapper h3 {
     color: white;
     font-size: 1.1rem;
@@ -364,43 +286,6 @@ h2 {
     top: 4vw;
   }
 
-  .dato {
-    border-radius: 12px;
-    width: 7vw;
-    height: 6vw;
-    background-color: #430a08;
-    color: white;
-    border: none;
-    position: absolute;
-    margin-left: 4vw;
-    top: 14vw;
-    font-family: futura-pt, sans-serif;
-  }
-
-  #d2 {
-    left: 8.5vw;
-  }
-
-  #d3 {
-    left: 17.5vw;
-  }
-
-  #d4 {
-    left: 26vw;
-  }
-
-  #d5 {
-    left: 34.5vw;
-  }
-
-  #d6 {
-    left: 43vw;
-  }
-
-  #d7 {
-    left: 51.5vw;
-  }
-
   .knap_vov {
     font-size: 1.2rem;
   }
@@ -421,43 +306,6 @@ h2 {
 /*media 1520*/
 
 @media (min-width: 1520px) {
-  .dato {
-    border-radius: 12px;
-    width: 8vw;
-    height: 6vw;
-    background-color: #430a08;
-    color: white;
-    border: none;
-    position: absolute;
-    margin-left: 1vw;
-    top: 14vw;
-    font-family: futura-pt, sans-serif;
-  }
-
-  #d2 {
-    left: 9vw;
-  }
-
-  #d3 {
-    left: 18vw;
-  }
-
-  #d4 {
-    left: 27vw;
-  }
-
-  #d5 {
-    left: 36vw;
-  }
-
-  #d6 {
-    left: 45vw;
-  }
-
-  #d7 {
-    left: 54vw;
-  }
-
   .film_wrapper h3 {
     color: white;
     font-size: 1.4rem;
