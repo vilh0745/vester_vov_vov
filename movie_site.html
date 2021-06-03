@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/mutual_style.css" />
     <link rel="stylesheet" href="styles/movie_site.css" />
     <link rel="stylesheet" href="https://use.typekit.net/uat1saz.css" />
-    <link rel="shortcut icon" href="img/fy_bi_sort.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/fy_bi_sort.svg" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -20,7 +20,6 @@
       </div>
       <nav>
         <ul id="menu">
-          
           <li><a href="program.html">Film i Biografen</a></li>
           <li><a href="upcoming.html">Kommende Film</a></li>
           <li><a href="#">Find Din Billetbestilling</a></li>
@@ -42,7 +41,12 @@
       <section id="movie_site">
         <div class="top">
           <div class="poster">
-            <img src="img/som.webp" width="1600" height="2370" alt="Sound of metal" />
+            <img
+              src="img/som.webp"
+              width="1600"
+              height="2370"
+              alt="Sound of metal"
+            />
             <h4>
               <span class="bold">Instruktør:</span> Darius Marder
               <br />
@@ -57,20 +61,22 @@
             <h2>Sound of Metal</h2>
             <div class="billetelement">
               <div id="knapper_film">
-                <button class="dato" id="d1">Man<br>31/5</button>
-                <button class="dato" id="d2">Tir<br>1/6</button>
-                <button class="dato" id="d3">Ons<br>2/6</button>
-                <button class="dato" id="d4">Tor<br>3/6</button>
-                <button class="dato" id="d5">Fre<br>4/6</button>
-                <button class="dato" id="d6">Lør<br>5/6</button>
-                <button class="dato" id="d7">Søn<br>6/6</button>
+                <button class="dato" id="d1">Man<br />31/5</button>
+                <button class="dato" id="d2">Tir<br />1/6</button>
+                <button class="dato" id="d3">Ons<br />2/6</button>
+                <button class="dato" id="d4">Tor<br />3/6</button>
+                <button class="dato" id="d5">Fre<br />4/6</button>
+                <button class="dato" id="d6">Lør<br />5/6</button>
+                <button class="dato" id="d7">Søn<br />6/6</button>
               </div>
             </div>
-        
-            <a class="billet_knap" href="#"> <button id="bestil" onclick="on()">Bestil billetter</button></a> 
+
+            <a class="billet_knap" href="#">
+              <button id="bestil" onclick="on()">Bestil billetter</button></a
+            >
           </div>
           <div id="overlay">
-            <img src="img/biografsal.webp" onclick="off()" alt="Vælg Sæde">
+            <img src="img/biografsal.webp" onclick="off()" alt="Vælg Sæde" />
           </div>
         </div>
 
@@ -100,41 +106,59 @@
             <span class="bold">Kilde:</span> Camera Film
           </p>
         </div>
-</section>
+      </section>
 
-        <section class="andre">
-          <h2>Andre film i Vester Vov Vov</h2>
-          <div class="film_wrapper">
+      <section class="andre">
+        <h2>Andre film i Vester Vov Vov</h2>
+        <div class="film_wrapper">
+          <div class="film1">
+            <a href="movie_site_minari.html"
+              ><img src="img/min.webp" width="800" height="1200" alt="Minari"
+            /></a>
+            <h3>Minari</h3>
+            <p>
+              Minari som vandt en Golden Globe for bedste ikke amerikanske film
+              bliver vores åbningsfilm. Minari er en bevægende film om det, der
+              forbinder os med vores rødder. I Minari møder vi en
+              koreansk-amerikansk familie, som flytter til en lille farm i
+              Arkansas for at forfølge deres egen amerikanske drøm.
+            </p>
+            <a href="movie_site_minari.html" class="button">Bestil billetter</a>
+          </div>
 
-            <div class="film1">
-              <a href="movie_site_minari.html"><img src="img/min.webp" width="800" height="1200" alt="Minari" /></a>
-              <h3>Minari</h3>
-              <p>
-             Minari som vandt en Golden Globe for bedste ikke amerikanske film bliver vores åbningsfilm. Minari er en bevægende film om det, der forbinder os med vores rødder. I Minari møder vi en koreansk-amerikansk familie, som flytter til en lille farm i Arkansas for at forfølge deres egen amerikanske drøm. 
-              </p>
-              <a href="movie_site_minari.html" class="button">Bestil billetter</a>
-            </div>
+          <div class="film2">
+            <a href="movie_site_nomad.html"
+              ><img
+                src="img/nomad.webp"
+                width="850"
+                height="1201"
+                alt="nomadland"
+            /></a>
+            <h3>Nomadland</h3>
+            <p>
+              Chloé Zhaos film er bygget op omkring Frances McDormands
+              præstation på samme måde, som hendes nøgterne, humanistiske The
+              Rider var bygget op omkring den ikke-professionelle skuespiller
+              Lilly Jandreau.
+            </p>
+            <a href="movie_site_nomad.html" class="button">Bestil billetter</a>
+          </div>
 
-            <div class="film2">
-              <a href="movie_site_nomad.html"><img src="img/nomad.webp" width="850" height="1201" alt="nomadland" /></a>
-              <h3>Nomadland</h3>
-              <p>
-               Chloé Zhaos film er bygget op omkring Frances McDormands præstation på samme måde, som hendes nøgterne, humanistiske The Rider var bygget op omkring den ikke-professionelle skuespiller Lilly Jandreau.  
-              </p>
-              <a href="movie_site_nomad.html" class="button">Bestil billetter</a>
-            </div>
-
-            <div class="film3">
-              <a href="movie_site_MOM.html"><img src="img/mom.webp" width="1280" height="1920" alt="MOM" /></a>
-              <h3>Memories of Murder</h3>
-              <p>
-               Memories of Murder er inspireret af landets første seriemorder. I 1986 fandt man liget af en kvinde i en grøftekant i Gyunggi -provinsen. Hun var blevet voldtaget og herefter kvalt med sin egen strømpe.
-              </p>
-              <a href="movie_site_MOM.html" class="button">Bestil billetter</a>
-            </div>
+          <div class="film3">
+            <a href="movie_site_MOM.html"
+              ><img src="img/mom.webp" width="1280" height="1920" alt="MOM"
+            /></a>
+            <h3>Memories of Murder</h3>
+            <p>
+              Memories of Murder er inspireret af landets første seriemorder. I
+              1986 fandt man liget af en kvinde i en grøftekant i Gyunggi
+              -provinsen. Hun var blevet voldtaget og herefter kvalt med sin
+              egen strømpe.
+            </p>
+            <a href="movie_site_MOM.html" class="button">Bestil billetter</a>
           </div>
         </div>
-      </section> 
+      </section>
     </main>
     <footer>
       <p>
